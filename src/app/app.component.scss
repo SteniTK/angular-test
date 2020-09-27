@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+    font-weight: 400;
+}
+
+/* hide child elements */
+#nav li ul {
+    display:none;
+}
+
+/* show child elements when hovering over list item */
+#nav li:hover ul {
+display:block;
+}

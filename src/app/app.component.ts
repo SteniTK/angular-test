@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class AppComponent implements OnInit {
   title = 'angular-test';
-  menuItems = [];
+  public menuItems = [];
   constructor(private http: HttpClient) { 
     this.http = http;
   }
@@ -21,7 +21,8 @@ export class AppComponent implements OnInit {
   getMenu(): void {
     // http://208.109.13.111:9090/api/Category
     this.http.get<any>('http://localhost:4200/assets/response-stub.json', {observe: 'body', responseType: 'json'}).subscribe(data => {
-      console.log(data);
+      this.menuItems = data.result;
+      console.log(this.menuItems);
     });
   }
 }

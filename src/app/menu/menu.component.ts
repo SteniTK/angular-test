@@ -18,8 +18,7 @@ export class MenuComponent implements OnInit {
   }
 
   getMenu(): void {
-    // http://208.109.13.111:9090/api/Category
-    this.http.get<any>('http://localhost:4200/assets/response-stub.json', {observe: 'body', responseType: 'json'}).subscribe(data => {
+    this.http.get<any>('http://208.109.13.111:9090/api/Category', {observe: 'body', responseType: 'json'}).subscribe(data => {
       this.menuItems = data.result;
       console.log(this.menuItems);
     });

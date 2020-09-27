@@ -1,6 +1,16 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 header {
     text-align: center;
     font-weight: 400;
+}
+
+ul,
+ul ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 /* hide child elements */
@@ -10,5 +20,5 @@ header {
 
 /* show child elements when hovering over list item */
 #nav li:hover ul {
-display:block;
+    display:block;
 }

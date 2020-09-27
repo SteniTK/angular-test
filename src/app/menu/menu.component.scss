@@ -13,6 +13,10 @@ ul ul {
     list-style: none;
 }
 
+#nav {
+    margin : 20px;
+}
+
 /* hide child elements */
 #nav li ul {
     display:none;
@@ -22,3 +26,17 @@ ul ul {
 #nav li:hover ul {
     display:block;
 }
+
+ul {
+    border: 1px solid #555;
+  }
+  
+  li {
+    padding : 10px;
+    border-bottom: 1px solid #555;
+    background-color: lightgrey;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }

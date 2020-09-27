@@ -6,12 +6,13 @@
   <ul id="nav">
     <li *ngFor='let item of menuItems;'><a href="#">{{item.title}}</a>
       <ul *ngIf="item.subCategories.length>0">
-        <li *ngFor='let subitem of item.subCategories;'><a href="#">{{subitem.title}}</a></li>
+        <li *ngFor='let subitem of item.subCategories;'><a routerLink="/activity" routerLinkActive="active">{{subitem.title}}</a></li>
       </ul>
     </li>
   </ul>
 </main>
-
+<!-- The routed views render in the <router-outlet>-->
+<!-- <router-outlet></router-outlet> -->
 <footer>
 <!-- place icons here -->
 </footer>
